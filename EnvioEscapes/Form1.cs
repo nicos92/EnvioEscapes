@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
+using System.IO;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
@@ -53,7 +56,7 @@ namespace EnvioEscapes
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            
+            //LoadCustomFont();
             SliderEsc.Value = Convert.ToInt32(Properties.Settings.Default.escapes);
             SliderSeg.Value = Convert.ToInt32(Properties.Settings.Default.segundos);
            
@@ -212,6 +215,52 @@ namespace EnvioEscapes
             BtnIniciar.Enabled = !habilitacion;
             SliderSeg.Enabled = !habilitacion;
             SliderEsc.Enabled = !habilitacion;
+        }
+
+        private void LoadCustomFont()
+        {
+            // Obtén el ensamblado actual
+            var assembly = System.Reflection.Assembly.GetExecutingAssembly();
+
+            // Especifica el nombre del recurso de la fuente
+            //Properties.Resources.HackNerdFont_Regular
+            string fontResourceName = "EnvioEscapes.Fonts.HackNerdFont-Regular.ttf";
+
+            // Carga la fuente desde el recurso incrustado
+            using (var stream = assembly.GetManifestResourceStream(fontResourceName))
+            {
+                if (stream == null)
+                {
+                    MessageBox.Show("No se pudo cargar la fuente.");
+                    return;
+                }
+
+                // Crea un buffer para almacenar los datos de la fuente
+                byte[] fontData = new byte[stream.Length];
+                stream.Read(fontData, 0, (int)stream.Length);
+
+                // Carga la fuente en memoria
+                IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
+                Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
+
+                PrivateFontCollection privateFonts = new PrivateFontCollection();
+                privateFonts.AddMemoryFont(fontPtr, fontData.Length);
+
+                // Libera la memoria no administrada
+                Marshal.FreeCoTaskMem(fontPtr);
+
+                // Crea un objeto Font a partir de la fuente cargada
+                Font customFont = new Font(privateFonts.Families[0], 12f);
+
+                // Aplica la fuente a un control, por ejemplo, un Label
+                
+                LblEstado.Font = customFont;
+                LblEsc.Font = customFont;
+                LblProgreso.Font = customFont;
+                LblSeg.Font = customFont;
+                BtnDetener.Font = customFont;
+                BtnIniciar.Font = customFont;
+            }
         }
     }
 }

@@ -59,7 +59,7 @@
             this.tableLayoutPanel1.Controls.Add(this.LblProgreso, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 11);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
@@ -70,7 +70,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(750, 429);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(750, 407);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // SliderSeg
@@ -78,7 +78,7 @@
             this.SliderSeg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SliderSeg.Dock = System.Windows.Forms.DockStyle.Top;
             this.SliderSeg.LargeChange = 1;
-            this.SliderSeg.Location = new System.Drawing.Point(80, 248);
+            this.SliderSeg.Location = new System.Drawing.Point(80, 237);
             this.SliderSeg.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.SliderSeg.Minimum = 1;
             this.SliderSeg.Name = "SliderSeg";
@@ -93,7 +93,7 @@
             this.SliderEsc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SliderEsc.Dock = System.Windows.Forms.DockStyle.Top;
             this.SliderEsc.LargeChange = 1;
-            this.SliderEsc.Location = new System.Drawing.Point(80, 138);
+            this.SliderEsc.Location = new System.Drawing.Point(80, 133);
             this.SliderEsc.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.SliderEsc.Maximum = 100;
             this.SliderEsc.Minimum = 1;
@@ -108,12 +108,12 @@
             // 
             this.LblEsc.AutoSize = true;
             this.LblEsc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblEsc.Font = new System.Drawing.Font("Hack Nerd Font", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEsc.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblEsc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblEsc.Location = new System.Drawing.Point(80, 115);
+            this.LblEsc.Location = new System.Drawing.Point(80, 111);
             this.LblEsc.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LblEsc.Name = "LblEsc";
-            this.LblEsc.Size = new System.Drawing.Size(590, 19);
+            this.LblEsc.Size = new System.Drawing.Size(590, 18);
             this.LblEsc.TabIndex = 0;
             this.LblEsc.Text = "Cantidad de Esc: ";
             // 
@@ -121,12 +121,12 @@
             // 
             this.LblSeg.AutoSize = true;
             this.LblSeg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblSeg.Font = new System.Drawing.Font("Hack Nerd Font", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSeg.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSeg.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblSeg.Location = new System.Drawing.Point(80, 225);
+            this.LblSeg.Location = new System.Drawing.Point(80, 215);
             this.LblSeg.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LblSeg.Name = "LblSeg";
-            this.LblSeg.Size = new System.Drawing.Size(590, 19);
+            this.LblSeg.Size = new System.Drawing.Size(590, 18);
             this.LblSeg.TabIndex = 0;
             this.LblSeg.Text = "Intervalo de Segundos: ";
             // 
@@ -134,12 +134,12 @@
             // 
             this.LblEstado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblEstado.AutoSize = true;
-            this.LblEstado.Font = new System.Drawing.Font("Hack Nerd Font", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEstado.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblEstado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblEstado.Location = new System.Drawing.Point(324, 0);
+            this.LblEstado.Location = new System.Drawing.Point(328, 0);
             this.LblEstado.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LblEstado.Name = "LblEstado";
-            this.LblEstado.Size = new System.Drawing.Size(101, 24);
+            this.LblEstado.Size = new System.Drawing.Size(93, 25);
             this.LblEstado.TabIndex = 0;
             this.LblEstado.Text = "Estado:";
             // 
@@ -147,12 +147,12 @@
             // 
             this.LblProgreso.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblProgreso.AutoSize = true;
-            this.LblProgreso.Font = new System.Drawing.Font("Hack Nerd Font", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblProgreso.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblProgreso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.LblProgreso.Location = new System.Drawing.Point(304, 54);
+            this.LblProgreso.Location = new System.Drawing.Point(305, 52);
             this.LblProgreso.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LblProgreso.Name = "LblProgreso";
-            this.LblProgreso.Size = new System.Drawing.Size(142, 31);
+            this.LblProgreso.Size = new System.Drawing.Size(140, 32);
             this.LblProgreso.TabIndex = 0;
             this.LblProgreso.Text = "Inactivo";
             // 
@@ -164,12 +164,12 @@
             this.tableLayoutPanel2.Controls.Add(this.BtnDetener, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.BtnIniciar, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(80, 339);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(80, 323);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(590, 86);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(590, 80);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
             // BtnDetener
@@ -184,12 +184,12 @@
             this.BtnDetener.Enabled = false;
             this.BtnDetener.FlatAppearance.BorderSize = 0;
             this.BtnDetener.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDetener.Font = new System.Drawing.Font("Hack Nerd Font", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDetener.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDetener.ForeColor = System.Drawing.Color.White;
-            this.BtnDetener.Location = new System.Drawing.Point(317, 16);
+            this.BtnDetener.Location = new System.Drawing.Point(317, 14);
             this.BtnDetener.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BtnDetener.Name = "BtnDetener";
-            this.BtnDetener.Size = new System.Drawing.Size(250, 54);
+            this.BtnDetener.Size = new System.Drawing.Size(250, 51);
             this.BtnDetener.TabIndex = 4;
             this.BtnDetener.Text = "Detener";
             this.BtnDetener.TextColor = System.Drawing.Color.White;
@@ -207,12 +207,12 @@
             this.BtnIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnIniciar.FlatAppearance.BorderSize = 0;
             this.BtnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnIniciar.Font = new System.Drawing.Font("Hack Nerd Font", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIniciar.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnIniciar.ForeColor = System.Drawing.Color.White;
-            this.BtnIniciar.Location = new System.Drawing.Point(22, 16);
+            this.BtnIniciar.Location = new System.Drawing.Point(22, 14);
             this.BtnIniciar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BtnIniciar.Name = "BtnIniciar";
-            this.BtnIniciar.Size = new System.Drawing.Size(250, 54);
+            this.BtnIniciar.Size = new System.Drawing.Size(250, 51);
             this.BtnIniciar.TabIndex = 3;
             this.BtnIniciar.Text = "Iniciar";
             this.BtnIniciar.TextColor = System.Drawing.Color.White;
@@ -221,20 +221,20 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(776, 453);
+            this.ClientSize = new System.Drawing.Size(776, 429);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("Hack Nerd Font", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(796, 496);
-            this.MinimumSize = new System.Drawing.Size(796, 496);
+            this.MaximumSize = new System.Drawing.Size(796, 472);
+            this.MinimumSize = new System.Drawing.Size(796, 472);
             this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.Padding = new System.Windows.Forms.Padding(13, 11, 13, 11);
             this.Text = "NicoS92 App Envio de Escapes";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
