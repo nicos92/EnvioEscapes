@@ -52,19 +52,14 @@ namespace EnvioEscapes
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.BackColor = ColoresARGB.Dark;
 
-            BtnDetener.BackGroudColor = ColoresARGB.Dark;
-            BtnIniciar.BackGroudColor = ColoresARGB.Success;
+            
             SliderEsc.Value = Convert.ToInt32(Properties.Settings.Default.escapes);
             SliderSeg.Value = Convert.ToInt32(Properties.Settings.Default.segundos);
-            LblEstado.ForeColor = ColoresARGB.White;
-            LblEsc.ForeColor = ColoresARGB.White;
-            LblSeg.ForeColor = ColoresARGB.White;
+           
             LblEsc.Text = "Cantidad de Esc: " + SliderEsc.Value;
             LblSeg.Text = "Intervalo de Segundos: " + SliderSeg.Value;
             LblProgreso.Text = "Inactivo";
-            LblProgreso.ForeColor = ColoresARGB.Red;
         }
 
         private async void BtnIniciar_Click(object sender, EventArgs e)
