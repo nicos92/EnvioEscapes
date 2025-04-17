@@ -90,7 +90,9 @@ namespace EnvioEscapes
             catch (Exception ex)
             {
                 // Manejar otras excepciones
-                MessageBox.Show($"{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var msjBox = new NSMessageBox.NSMessageBox();
+
+                msjBox.ShowDialog($"{ex.Message}", "Error", NSMessageBox.Iconos.Cross, NSMessageBox.Botones.Aceptar);
             }
             finally
             {
@@ -164,7 +166,9 @@ namespace EnvioEscapes
             catch (Exception ex)
             {
                 // Manejar otras excepciones
-                MessageBox.Show($"{ex.Message}", "Error en Envio de escapes:", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var msjBox = new NSMessageBox.NSMessageBox();
+
+                msjBox.ShowDialog($"{ex.Message}", "Error Envio de Escapes", NSMessageBox.Iconos.Cross, NSMessageBox.Botones.Aceptar);
             }
 
 
@@ -173,7 +177,9 @@ namespace EnvioEscapes
         private static void CartelTareaDetenida()
         {
             // La tarea fue cancelada
-            MessageBox.Show("El envio de Escapes fue Detenido", "Tarea cancelada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            var msjBox = new NSMessageBox.NSMessageBox();
+
+            msjBox.ShowDialog("Tarea cancelada", "El envio de Escapes fue Detenido", NSMessageBox.Iconos.Info, NSMessageBox.Botones.Aceptar);
         }
 
         
